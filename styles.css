@@ -223,6 +223,10 @@ hr {
     color: var(--fundo-escuro);
 }
 
+.div-img-espaco {
+    display: flex;
+    align-items: center;
+}
 
 
 
