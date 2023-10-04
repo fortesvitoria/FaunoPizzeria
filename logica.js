@@ -24,23 +24,27 @@ item01.addEventListener("click", function () {
     document.getElementById("valor").textContent = "R$ " + valor;
 
     cell1 = newRow.insertCell(0);
+    cell1.textContent = "Pizza"
     cell2 = newRow.insertCell(1);
-    cell1.textContent = valor
-    cell2.textContent = "Pizza"
-    indice++
+    cell2.textContent =  valor
+    
+    
 
 })
+indice++
 
 item02.addEventListener("click", function () {
     // Adicionar 1 ao valor atual
     valor += valor02;
     // Atualizar o conteúdo da tag de span com o novo valor
     document.getElementById("valor").textContent = "R$ " + valor;
+
     cell1 = newRow.insertCell(0);
+    cell1.textContent = "Anbacate"
     cell2 = newRow.insertCell(1);
-    cell1.textContent = valor
-    cell2.textContent = "Abacate"
-    indice++
+    cell2.textContent = valor
 
 })
+indice++
+
 
