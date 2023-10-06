@@ -1,4 +1,5 @@
-@import url(media.css);
+@import url(media-tablet.css);
+@import url(media-celular.css);
 
 /* variaveis */
 :root {
