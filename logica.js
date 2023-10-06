@@ -26,12 +26,11 @@ item01.addEventListener("click", function () {
     cell1 = newRow.insertCell(0);
     cell1.textContent = "Pizza"
     cell2 = newRow.insertCell(1);
-    cell2.textContent =  valor
+    cell2.textContent =  valor01
     
     
 
 })
-indice++
 
 item02.addEventListener("click", function () {
     // Adicionar 1 ao valor atual
@@ -42,9 +41,8 @@ item02.addEventListener("click", function () {
     cell1 = newRow.insertCell(0);
     cell1.textContent = "Anbacate"
     cell2 = newRow.insertCell(1);
-    cell2.textContent = valor
+    cell2.textContent = valor02
 
 })
-indice++
 
 
