@@ -70,12 +70,14 @@ ul {
     list-style-type: none;
 }
 
-a, button {
+a,
+button {
     text-decoration: none;
     color: var(--off-white);
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
     color: var(--salmao);
 }
 
@@ -160,7 +162,7 @@ hr {
 .cabecalho {
     display: flex;
     padding: 2em;
-    
+
 }
 
 .conteudo-texto {
@@ -207,11 +209,13 @@ hr {
     display: flex;
 }
 
-.itens-populares, .fundo-escuro {
+.itens-populares,
+.fundo-escuro {
     display: flex;
     /* justify-content: flex-end; */
 
 }
+
 .div-popular {
     display: inline-flex;
     align-items: center;
@@ -221,6 +225,7 @@ hr {
 .div-popular .btn {
     margin-left: 2em;
 }
+
 .itens-populares .img-fundo {
     max-width: 15em;
     border: solid 1px var(--verde);
@@ -268,4 +273,39 @@ hr {
 
 .rodape .icone {
     margin: 0.5em;
+}
+
+/* tabela */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--verde);
+}
+
+.produto {
+    margin-bottom: 10px;
+}
+
+.span {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding-bottom: 2em;
+    font-size: 24px;
+}
+
+.finaliza-compra {
+    text-align: center;
+    padding-bottom: 2em;
 }

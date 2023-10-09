@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fauno Pizzeria</title>
+    <title>MENU - Fauno Pizzeria</title>
     <!-- css -->
     <link rel="stylesheet" href="./styles.css">
     <!-- icone aba -->
@@ -26,7 +26,7 @@
             <nav class="nav">
                 <div class="div-logo">
                     <img class="img-logo" src="assets/imagens/logo.png">
-                    <h1>Fauno Pizzeria</h1>
+                    <h1><a href="index.html">Fauno Pizzeria</a></h1>
                 </div>
                 <div class="div-links">
                     <ul class="ul-links">
@@ -37,7 +37,7 @@
                     </ul>
                 </div>
                 <div class="div-btn">
-                    <a href="#" class="btn">Faça seu pedido</a>
+                    <a href="menu.html" class="btn">Faça seu pedido</a>
                 </div>
             </nav>
 
@@ -46,7 +46,9 @@
 
     <!-- principal -->
     <main>
-        <div class="menu-compras" id="menu-compras">
+        <!-- menu itens populares-->
+        <div class="conteudo" id="menu">
+
             <!-- menu itens populares-->
             <div class="conteudo" id="menu">
                 <!-- titulo -->
@@ -64,7 +66,7 @@
                                     <img src="assets/imagens/popular1.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Salada de Abacate</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -72,7 +74,8 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4 id="valor01">$ 19,00</h4> <button type="button" href="#" class="btn" id="item01">Adicionar à sacola</button>
+                                    <h4 id="valor01">$ 19,00</h4> <button type="button" href="#" class="btn" id="item01"
+                                        data-nome="Salada de Abacate" data-valor="19">Adicionar à sacola</button>
                                 </div>
                             </div>
 
@@ -85,14 +88,15 @@
                                         <img src="assets/imagens/popular2.jpg" alt="imagem pizza napolitana no forno"
                                             class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Pizza de Rúcula</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 47,00</h4><button type="button" href="#" class="btn" id="item02">Adicionar à sacola</button>
+                                        <h4>$ 47,00</h4><button type="button" href="#" class="btn" id="item02"
+                                            data-nome="Pizza de Rúcula" data-valor="47">Adicionar à sacola</button>
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +113,7 @@
                                     <img src="assets/imagens/popular3.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Sopa de Carne de Panela</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -117,7 +121,8 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4>$ 45,00</h4> <button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                    <h4>$ 38,00</h4> <button type="button" href="#" class="btn" id="adicionar"
+                                        data-nome="Sopa de Carne de Panela" data-valor="38">Adicionar à sacola</button>
                                 </div>
                             </div>
 
@@ -130,14 +135,15 @@
                                         <img src="assets/imagens/popular4.jpg" alt="imagem pizza napolitana no forno"
                                             class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Tiramisu</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 28,00</h4> <button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                        <h4>$ 28,00</h4> <button type="button" href="#" class="btn" id="adicionar"
+                                            data-nome="Tiramisu" data-valor="38">Adicionar à sacola</button>
                                     </div>
                                 </div>
                             </div>
@@ -145,6 +151,7 @@
                     </div>
                 </div>
             </div>
+
 
             <!-- menu entradas-->
             <div class="cabecalho" id="entradas">
@@ -163,7 +170,7 @@
                                     <img src="assets/imagens/popular1.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Salada de Abacate</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -171,7 +178,8 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4>$ 19,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                    <h4>$ 19,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                        data-nome="Salada de Abacate" data-valor="19">Adicionar à sacola</button>
                                 </div>
                             </div>
 
@@ -184,14 +192,15 @@
                                         <img src="assets/imagens/img-sanduiche.jpg"
                                             alt="imagem pizza napolitana no forno" class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Sanduiche de Ovos</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 37,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                        <h4>$ 28,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                            data-nome="Sanduiche de Ovos" data-valor="28">Adicionar à sacola</button>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +217,7 @@
                                     <img src="assets/imagens/popular3.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Sopa de Carne de Panela</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -216,7 +225,8 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4>$ 45,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                    <h4>$ 38,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                        data-nome="Sopa de Carne de Panela" data-valor="38">Adicionar à sacola</button>
                                 </div>
                             </div>
 
@@ -229,14 +239,16 @@
                                         <img src="assets/imagens/bruschetta.jpg" alt="imagem pizza napolitana no forno"
                                             class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Bruschetta de Tomates Frescos</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 28,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                        <h4>$ 28,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                            data-nome="Bruschetta de Tomates Frescos" data-valor="28">Adicionar à
+                                            sacola</button>
                                     </div>
                                 </div>
                             </div>
@@ -244,6 +256,7 @@
                     </div>
                 </div>
             </div>
+
 
             <!-- menu pizzas-->
             <div class="conteudo" id="pizzas">
@@ -262,7 +275,7 @@
                                     <img src="assets/imagens/pizza1.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Pizza Pepperoni</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -270,7 +283,8 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4>$ 42,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                    <h4>$ 42,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                        data-nome="Pizza Pepperoni" data-valor="42">Adicionar à sacola</button>
                                 </div>
                             </div>
 
@@ -283,14 +297,15 @@
                                         <img src="assets/imagens/popular2.jpg" alt="imagem pizza napolitana no forno"
                                             class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Pizza de Rúcula</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 47,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                        <h4>$ 47,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                            data-nome="Pizza de Rúcula" data-valor="47">Adicionar à sacola</button>
                                     </div>
                                 </div>
                             </div>
@@ -307,7 +322,7 @@
                                     <img src="assets/imagens/pizza3.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Pizza Margheritta</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -315,7 +330,8 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4>$ 38,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                    <h4>$ 38,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                        data-nome="Pizza Margheritta" data-valor="38">Adicionar à sacola</button>
                                 </div>
                             </div>
 
@@ -328,14 +344,15 @@
                                         <img src="assets/imagens/pizza2.jpg" alt="imagem pizza napolitana no forno"
                                             class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Pizza Dois Sabores</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 34,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                        <h4>$ 40,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                            data-nome="Pizza Dois Sabores" data-valor="40">Adicionar à sacola</button>
                                     </div>
                                 </div>
                             </div>
@@ -343,6 +360,7 @@
                     </div>
                 </div>
             </div>
+
 
             <!-- menu sobremesas-->
             <div class="cabecalho" id="sobremesas">
@@ -361,7 +379,7 @@
                                     <img src="assets/imagens/sobremesa1.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Sorvete de Baunilha com Caramelo</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -369,7 +387,9 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4>$ 22,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                    <h4>$ 22,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                        data-nome="Sorvete de Baunilha com Caramelo" data-valor="22">Adicionar
+                                        à sacola</button>
                                 </div>
                             </div>
 
@@ -382,14 +402,15 @@
                                         <img src="assets/imagens/sobremesa2.jpg" alt="imagem pizza napolitana no forno"
                                             class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Sorvete Framboesa</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 14,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                        <h4>$ 14,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                            data-nome="Sorvete Framboesa" data-valor="14">Adicionar à sacola</button>
                                     </div>
                                 </div>
                             </div>
@@ -406,7 +427,7 @@
                                     <img src="assets/imagens/sobremesa3.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Cookie</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -414,7 +435,9 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4>$ 8,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                    <h4>$ 8,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                        data-nome="Cookie" data-valor="8">Adicionar à
+                                        sacola</button>
                                 </div>
                             </div>
 
@@ -427,14 +450,15 @@
                                         <img src="assets/imagens/popular4.jpg" alt="imagem pizza napolitana no forno"
                                             class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Tiramisu</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 28,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                        <h4>$ 18,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                            data-nome="Tiramisu" data-valor="18">Adicionar à sacola</button>
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +484,7 @@
                                     <img src="assets/imagens/bebida1.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Água SanPellegrino Saborizada</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -468,7 +492,9 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4>$ 7,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                    <h4>$ 7,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                        data-nome="Água SanPellegrino Saborizada" data-valor="7">Adicionar à
+                                        sacola</button>
                                 </div>
                             </div>
 
@@ -481,20 +507,20 @@
                                         <img src="assets/imagens/bebida2.jpg" alt="imagem pizza napolitana no forno"
                                             class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Suco de Laranja</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 8,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                        <h4>$ 8,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                            data-nome="Suco de Laranja" data-valor="8">Adicionar à sacola</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
 
                     <!-- cardapio secao2-->
                     <div class="secao-popular">
@@ -505,7 +531,7 @@
                                     <img src="assets/imagens/bebida3.jpg" alt="imagem pizza napolitana no forno"
                                         class="img-fundo">
                                 </div>
-                                <div class="popular">
+                                <div class="popular produto">
                                     <h3>Chopp</h3>
                                     <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                         especial,
@@ -513,7 +539,8 @@
                                         molho é uma combinação equilibrada de azeite de oliva extra virgem, suco de
                                         limão
                                         fresco, alho picado e uma pitada de sal marinho.</p>
-                                    <h4>$ 14,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                    <h4>$ 14,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                        data-nome="Chopp" data-valor="14">Adicionar à sacola</button>
                                 </div>
                             </div>
 
@@ -526,14 +553,15 @@
                                         <img src="assets/imagens/bebida4.jpg" alt="imagem pizza napolitana no forno"
                                             class="img-fundo">
                                     </div>
-                                    <div class="popular">
+                                    <div class="popular produto">
                                         <h3>Vinho Taça</h3>
                                         <p> Nossa Salada de Abacate com Quinoa é cuidadosamente regada com um molho
                                             especial, criado na nossa cozinha para acentuar os sabores naturais dos
                                             ingredientes. Este molho é uma combinação equilibrada de azeite de oliva
                                             extra
                                             virgem, suco de limão fresco, alho picado e uma pitada de sal marinho.</p>
-                                        <h4>$ 14,00</h4><button type="button" href="#" class="btn" id="adicionar">Adicionar à sacola</button>
+                                        <h4>$ 14,00</h4><button type="button" href="#" class="btn" id="adicionar"
+                                            data-nome="Vinho Taça" data-valor="14">Adicionar à sacola</button>
                                     </div>
                                 </div>
                             </div>
@@ -541,20 +569,28 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
+
         <div>
-            <p></p><span id="valor">R$ 00</span>
-                <table id="tabela">
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Valor</th>
-            </tr>
-        </thead>
-        <tbody id="tabela-corpo">
-        </tbody>
-    </table>
+            <!-- VALOR TOTAL -->
+            <div class="span">
+                <p>VALOR TOTAL:</p>
+                <span id="valorTotal">R$ 00</span>
+            </div>
+
+            <!-- TABELA -->
+            <table id="tabela-pedidos">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
         </div>
         <div class="finaliza-compra">
             <button type="button" href="#" class="btn" id="finalizar">Finalizar compra</button>
@@ -563,22 +599,22 @@
     <footer>
         <footer>
             <div class="rodape">
-                    <div class="div-logo">
-                        <img class="img-logo" src="assets/imagens/logo.png">
-                        <h2>Fauno Pizzeria</h2>
-                    </div>
-                    <div class="copyright">
-                        <p class="copyright-texto">&copy; 2023 Vitória Fortes. Todos os dereitos reservados.</p>
-                    </div>
-                    <div class="div-icones">
-                        <a href="#"><img class="icone" src="assets/imagens/git.svg"></a>
-                        <a href="#"><img class="icone" src="assets/imagens/insta.svg"></a>
-                        <a href="#"><img class="icone" src="assets/imagens/linkedin.svg"></a>
-                    </div>
+                <div class="div-logo">
+                    <img class="img-logo" src="assets/imagens/logo.png">
+                    <h2>Fauno Pizzeria</h2>
+                </div>
+                <div class="copyright">
+                    <p class="copyright-texto">&copy; 2023 Vitória Fortes. Todos os dereitos reservados.</p>
+                </div>
+                <div class="div-icones">
+                    <a href="#"><img class="icone" src="assets/imagens/git.svg"></a>
+                    <a href="#"><img class="icone" src="assets/imagens/insta.svg"></a>
+                    <a href="#"><img class="icone" src="assets/imagens/linkedin.svg"></a>
+                </div>
             </div>
         </footer>
     </footer>
-<script src="logica.js"></script>
+    <script src="logica.js"></script>
 </body>
 
 </html>

@@ -1,48 +1,29 @@
-//criando variáveis
-
-//variavel do valor inserido no span
-let valor = 0
-
-//botoes
-let item01 = document.getElementById("item01")
-let item02 = document.getElementById("item02")
-let tabelaCorpo = document.getElementById("tabela-corpo");
-let newRow = tabelaCorpo.insertRow();
-let valor01 = 19
-let valor02 = 47
-let indice = 1
-let cell1 = newRow.insertCell(0);
-let cell2 = newRow.insertCell(1);
+let valorT = 0
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    var botoes = document.querySelectorAll("#menu button");
 
+    for (var i = 0; i < botoes.length; i++) {
+        botoes[i].addEventListener("click", function () {
+            var nome = this.getAttribute("data-nome");
+            var valor = parseFloat(this.getAttribute("data-valor"));
 
-item01.addEventListener("click", function () {
-    // Adicionar 1 ao valor atual
-    valor += valor01;
-    // Atualizar o conteúdo da tag de span com o novo valor
-    document.getElementById("valor").textContent = "R$ " + valor;
+            adicionarPedido(nome, valor);
+            
+        });
+    }
 
-    cell1 = newRow.insertCell(0);
-    cell1.textContent = "Pizza"
-    cell2 = newRow.insertCell(1);
-    cell2.textContent =  valor01
-    
-    
+    function adicionarPedido(nome, valor) {
+        var tabelaPedidos = document.getElementById("tabela-pedidos").getElementsByTagName('tbody')[0];
+        var novaLinha = tabelaPedidos.insertRow(tabelaPedidos.rows.length);
 
-})
-
-item02.addEventListener("click", function () {
-    // Adicionar 1 ao valor atual
-    valor += valor02;
-    // Atualizar o conteúdo da tag de span com o novo valor
-    document.getElementById("valor").textContent = "R$ " + valor;
-
-    cell1 = newRow.insertCell(0);
-    cell1.textContent = "Anbacate"
-    cell2 = newRow.insertCell(1);
-    cell2.textContent = valor02
-
-})
-
-
+        var cell1 = novaLinha.insertCell(0);
+        var cell2 = novaLinha.insertCell(1);
+        cell1.innerHTML = nome;
+        cell2.innerHTML = valor.toFixed(2); // Formata o valor com duas casas decimais
+        // Atualizar o conteúdo da tag de span com o novo valor
+valorT += valor
+        document.getElementById("valorTotal").textContent = "R$ " + valorT;
+    }
+});
